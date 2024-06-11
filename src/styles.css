@@ -47,10 +47,17 @@
 }
 
 body {
-    transition: background-color 0.2s ease;
+    background-color: var(--primary-container);
     margin: 0;
     padding: 0px;
     font-family: Arial, sans-serif;
+    vertical-align: middle;
+    border-radius: 8px;
+    margin: 100px;
+    padding: 100px;
+    text-align: center;
+    overflow-x: hidden;
+    transition: all 100ms ease-out;
 }
 
 h1 {
@@ -73,23 +80,6 @@ h1 {
 
 .button:hover {
     background-color: var(--primary-darker);
-}
-
-#quiz-container {
-    padding: 20px;
-}
-
-#main-window {
-    vertical-align: middle;
-    background-color: var(--primary-container);
-    border-radius: 8px;
-    margin: 100px;
-    padding: 100px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    overflow-x: hidden;
-    transition: all 100ms ease-out;
-    color: var(--on-primary-container);
 }
 
 #contact {
