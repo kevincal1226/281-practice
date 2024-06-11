@@ -23,21 +23,6 @@
     color: var(--dark-grey);
 }
 
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-    font-size: 50px;
-}
-
-body {
-    background-color: var(--primary-container);
-}
-
-
 #toggleBtn {
     position: fixed;
     top: 20px;
@@ -73,18 +58,6 @@ h1 {
     margin-bottom: 30px;
 }
 
-h2 {
-    font-size: 27px;
-    margin-bottom: 30px;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
 .button {
     width: 45%;
     height: 200px;
@@ -110,8 +83,8 @@ h2 {
     vertical-align: middle;
     background-color: var(--primary-container);
     border-radius: 8px;
-    margin: 10px;
-    padding: 25px;
+    margin: 100px;
+    padding: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     overflow-x: hidden;
