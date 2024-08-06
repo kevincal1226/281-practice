@@ -2,7 +2,7 @@ import * as binary from './binaryTrees.mjs';
 import * as sorting from './sorting.mjs';
 
 export function fetchHomepage() {
-    fetch('/src/html/homepage.html')
+    fetch('src/html/homepage.html')
         .then(response => response.text())
         .then(newHtml => {
             document.documentElement.innerHTML = newHtml;
@@ -13,7 +13,7 @@ export function fetchHomepage() {
 function initializeHomepage() {
     initializeLightDarkAndHomeButton();
     document.getElementById("sorting").addEventListener("click", function () {
-        fetch('/src/html/sorting.html')
+        fetch('src/html/sorting.html')
             .then(response => response.text())
             .then(newHtml => {
                 document.body.innerHTML = newHtml;
@@ -22,7 +22,7 @@ function initializeHomepage() {
             })
     });
     document.getElementById("trees").addEventListener("click", function () {
-        fetch('/src/html/binaryTrees.html')
+        fetch('src/html/binaryTrees.html')
             .then(response => response.text())
             .then(newHtml => {
                 document.body.innerHTML = newHtml;
