@@ -24,9 +24,21 @@
 }
 
 #homeBtn {
-    position: fixed;
+    position: absolute;
     top: 20px;
     left: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding: 0;
+}
+
+#toggleBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
     background-color: transparent;
     width: 50px;
@@ -46,17 +58,6 @@
     border-radius: 50%;
 }
 
-#toggleBtn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    background-color: transparent;
-    width: 50px;
-    height: 50px;
-    border: none;
-    padding: 0;
-}
 
 #toggleBtn img {
     width: 100%;
@@ -114,6 +115,7 @@ button {
     cursor: pointer;
     transition: background-color 200ms;
     font-size: 20px;
+    margin: 1vh 1vh;
 }
 
 button:hover {
@@ -122,16 +124,16 @@ button:hover {
 
 .home-page {
     background-color: var(--primary-container);
-    margin: 0;
-    padding: 0px;
+    margin: clamp(4rem, 12vh, 6rem) auto 5vh auto;
+    padding: 5vh 5vw;
     font-family: Arial, sans-serif;
     vertical-align: middle;
     border-radius: 8px;
-    margin: 100px;
-    padding: 100px;
     text-align: center;
     overflow-x: hidden;
     transition: all 100ms ease-out;
+    max-width: 1200px;
+    width: 90%;
 }
 
 #quiz-container {
@@ -152,13 +154,15 @@ button:hover {
 }
 
 #stats-window {
-    width: 30%;
+    width: 80%;
+    max-width: 500px;
     vertical-align: middle;
     background-color: var(--primary-container);
     border-radius: 8px;
     margin: auto;
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: clamp(1rem, 3vh, 2rem);
+    margin-bottom: clamp(1rem, 3vh, 2rem);
+    padding: clamp(0.5rem, 2vw, 1rem);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     overflow-x: hidden;
@@ -166,14 +170,6 @@ button:hover {
     color: var(--on-primary-container);
 }
 
-#contact {
-    font-size: 14px;
-    margin-top: 0px;
-    text-align: right;
-    position: fixed;
-    right: 10px;
-    bottom: 0px;
-}
 
 .flex-row {
     display: flex;
@@ -181,6 +177,7 @@ button:hover {
     justify-content: center;
     gap: 4px;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 #tree-diagram {
@@ -194,3 +191,5 @@ button:hover {
 #show-answer-container {
     padding: 10px;
 }
+
+
